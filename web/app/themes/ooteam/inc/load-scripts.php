@@ -7,7 +7,7 @@ function ooteam_scripts() {
 	 wp_enqueue_style( 'ooteam-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ooteam-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'ooteam-navigation', get_template_directory_uri() . '/assets/js/vendor/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ooteam-navigation', get_template_directory_uri() . '/dist/js/navigation.min.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/dist/js/app.min.js', array(), _S_VERSION, true );
 	wp_localize_script(

@@ -15,7 +15,9 @@ const mix = require('laravel-mix');
 
 mix
   .js('assets/js/app.js', 'dist/js/app.min.js')
-  .sass('assets/scss/woocommerce.scss', 'dist/css/woocommerce.min.css')
+  .js('assets/js/extras/customizer.js', 'dist/js/customizer.min.js')
+  .js('assets/js/extras/navigation.js', 'dist/js/navigation.min.js')
+  .sass('assets/scss/extras/woocommerce.scss', 'dist/css/woocommerce.min.css')
   .sass('assets/scss/style.scss', 'style.css')
   .options({ processCssUrls: false })
   .sourceMaps()
