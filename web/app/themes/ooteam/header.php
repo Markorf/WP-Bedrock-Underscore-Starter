@@ -60,3 +60,4 @@
 
 	<div id="content-wrapper" class="site-content">
 
+		<simple-counter count="10"></simple-counter>

@@ -31,6 +31,7 @@
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
     "rtlcss": "^2.5.0",
+    "sass": "^1.29.0",
     "vue-template-compiler": "^2.6.12"
   },
   "rtlcssConfig": {
@@ -53,5 +54,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production"
   },
-  "dependencies": {}
+  "dependencies": {
+    "hybrids": "^4.3.3"
+  }
 }
