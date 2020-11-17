@@ -11,8 +11,8 @@ export const SimpleCounter = {
   render: ({ count }) => html`
     <style>
       button {
-        background-color: orange;
-        color: white;
+        background: white;
+        color: green;
       }
     </style>
     <button onclick="${increaseCount}">Count: ${count}</button>

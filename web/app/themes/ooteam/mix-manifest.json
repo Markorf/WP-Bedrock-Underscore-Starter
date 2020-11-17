@@ -1,7 +1,7 @@
 {
     "/dist/js/app.min.js": "/dist/js/app.min.js",
     "/dist/css/woocommerce.min.css": "/dist/css/woocommerce.min.css",
-    "/style.css": "/style.css",
+    "/dist/css/app.min.css": "/dist/css/app.min.css",
     "/dist/js/customizer.min.js": "/dist/js/customizer.min.js",
     "/dist/js/navigation.min.js": "/dist/js/navigation.min.js"
 }

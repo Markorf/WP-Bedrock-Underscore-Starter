@@ -18,14 +18,14 @@ mix
   .js('assets/js/extras/customizer.js', 'dist/js/customizer.min.js')
   .js('assets/js/extras/navigation.js', 'dist/js/navigation.min.js')
   .sass('assets/scss/extras/woocommerce.scss', 'dist/css/woocommerce.min.css')
-  .sass('assets/scss/style.scss', 'style.css')
+  .sass('assets/scss/app.scss', 'dist/css/app.min.css')
   .options({ processCssUrls: false })
   .sourceMaps()
   .browserSync({
     injectChanges: true,
     open: false,
     proxy: 'my-website.com',
-    files: ['**/*.js', 'style.css', '**/*.+(html|php)'],
+    files: ['dist/js/*.js', 'dist/css/*.css', '**/*.+(html|php)'],
   });
 
 // Full API

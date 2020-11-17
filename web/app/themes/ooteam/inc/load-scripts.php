@@ -4,12 +4,13 @@
  * Enqueue scripts and styles.
  */
 function ooteam_scripts() {
-	 wp_enqueue_style( 'ooteam-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'ooteam-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'ooteam-main-style', get_stylesheet_directory_uri() . '/dist/css/app.min.css', array('ooteam-theme-style'), _S_VERSION );
 	wp_style_add_data( 'ooteam-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'ooteam-navigation', get_template_directory_uri() . '/dist/js/navigation.min.js', array(), _S_VERSION, true );
-
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/dist/js/app.min.js', array(), _S_VERSION, true );
+	
 	wp_localize_script(
 		'custom-script',
 		'wp_data',
